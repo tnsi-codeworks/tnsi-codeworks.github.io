@@ -1,15 +1,60 @@
 ---
-
+import "../styles/reset.css";
+import "../styles/colors.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+				<h1>tnsi codeworks</h1>
+				<ul class="links">
+					<li>
+						<a href="https://github.com/tnsi-codeworks" target="_blank" rel="noopener">github</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/tnsi_ch" target="_blank" rel="noopener">twitter</a>
+					</li>
+					<li>
+						<a href="https://www.twitch.tv/tensei_ch" target="_blank" rel="noopener">twitch</a>
+					</li>
+				</ul>
+			</div>
+      tnsi codeworks &copy; 2024
+    </div>
+  </body>
 </html>
+<style>
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-color);
+  }
+
+  .wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .card {
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    color: var(--card-text-color);
+    padding: 2rem;
+  }
+
+	ul.links {
+		a {
+			text-decoration: underline;
+		}
+	}
+</style>
